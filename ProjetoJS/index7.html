@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>trabalhando com dados 2</h1>
+    <button onclick="inicio()">clique para começar</button>
+    <section id="resultado">
+        <p>aqui vai aparecer o resultado</p>
+    </section>
+
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual é o nome?')
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Olá, <strong>`$(nome)`<strong>! É um grande prazer te conhecer! &#x1F596`
+        }
+    </script>
+</body>
+</html>
